@@ -1,0 +1,15 @@
+# Ignore local dependencies in any subfolder
+**/node_modules
+**/venv
+**/__pycache__
+**/.expo
+
+# Ignore build artifacts
+**/dist
+**/build
+
+# Ignore git and local environment files
+.git
+.env
+docker-compose.yml
+.dockerignore
