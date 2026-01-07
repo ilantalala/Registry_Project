@@ -1,0 +1,149 @@
+.register-container {
+  min-height: 100vh;
+  background-color: #c7d2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.register-card {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Left panel */
+.register-left {
+  width: 45%;
+  background-color: #3f51b5;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register-brand {
+  width: 35px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.register-illustration {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.illustration-emoji {
+  font-size: 80px;
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2));
+}
+
+.register-left p {
+  color: #c7d2fe;
+  font-size: 14px;
+}
+
+/* Right panel */
+.register-right {
+  width: 55%;
+  padding: 50px;
+}
+
+.register-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e1b4b;
+}
+
+.register-subtitle {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Form */
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.register-input {
+  width: 100%;
+  padding: 14px 14px 14px 45px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.1);
+}
+
+.btn-signup {
+  width: 100%;
+  background-color: #3f51b5;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-signup:hover {
+  background-color: #303f9f;
+}
+
+/* Extras */
+.google-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.error-box {
+  background: #fee;
+  color: #c00;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border-left: 4px solid #f44;
+}
+
+.login-link-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .register-card {
+    flex-direction: column;
+  }
+  .register-left,
+  .register-right {
+    width: 100%;
+  }
+}
